@@ -1,0 +1,20 @@
+﻿@model Accounting.Areas.Accounting.Models.Expense
+
+@{
+	View.Title = "Details";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+	<h2>Details</h2>
+
+	<fieldset>
+		<legend>Fields</legend>
+		
+		@Html.DisplayFor(model => model)
+
+	</fieldset>
+
+	<p>
+		@Html.ActionLink("Edit", "Edit", new { id=Model.ExpenseId }) |
+		@Html.ActionLink("Back to List", "Index")
+	</p>

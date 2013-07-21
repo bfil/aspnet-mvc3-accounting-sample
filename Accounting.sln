@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting", "Accounting\Accounting.csproj", "{630A79BF-2428-4953-966A-022AC8C0589F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting.Tests", "Accounting.Tests\Accounting.Tests.csproj", "{4376C2A3-C51C-4B07-827E-EFA3A9B9E924}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630A79BF-2428-4953-966A-022AC8C0589F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630A79BF-2428-4953-966A-022AC8C0589F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630A79BF-2428-4953-966A-022AC8C0589F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630A79BF-2428-4953-966A-022AC8C0589F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4376C2A3-C51C-4B07-827E-EFA3A9B9E924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4376C2A3-C51C-4B07-827E-EFA3A9B9E924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4376C2A3-C51C-4B07-827E-EFA3A9B9E924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4376C2A3-C51C-4B07-827E-EFA3A9B9E924}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

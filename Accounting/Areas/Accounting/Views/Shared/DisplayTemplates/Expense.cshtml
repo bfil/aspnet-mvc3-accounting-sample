@@ -1,0 +1,31 @@
+﻿@model Accounting.Areas.Accounting.Models.Expense
+        
+        <div class="display-label">
+            @Html.LabelFor(model => model.Description)
+		</div>
+        <div class="display-field">
+			@Html.DisplayFor(model => model.Description)
+		</div>
+        
+        <div class="display-label">
+            @Html.LabelFor(model => model.Date)
+		</div>
+        <div class="display-field">
+			@Html.DisplayFor(model => model.Date)
+		</div>
+        
+        <div class="display-label">
+            @Html.LabelFor(model => model.Amount)
+		</div>
+        <div class="display-field">
+			@Html.DisplayFor(model => model.Amount)
+		</div>
+        
+        <div class="display-label">
+            @Html.LabelFor(model => model.ExpenseTypeId)
+		</div>
+        <div class="display-field">
+			@Html.DisplayFor(model => model.ExpenseType.Description)
+		</div>
+        
+

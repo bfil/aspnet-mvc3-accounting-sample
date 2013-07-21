@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Accounting.Areas.Accounting.Models.Expense>
+
+@{
+    View.Title = "Expenses";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2>Expenses</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>
+                Description
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Expense Type
+            </th>
+        </tr>
+
+    @foreach (var item in Model) {
+    
+        <tr>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ExpenseId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ExpenseId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ExpenseId })
+            </td>
+            <td>
+                @item.Description
+            </td>
+            <td>
+                @String.Format("{0:d}", item.Date)
+            </td>
+            <td>
+                @String.Format("{0:F}", item.Amount)
+            </td>
+            <td>
+                @item.ExpenseType.Description
+            </td>
+        </tr>
+    
+    }
+
+    </table>
+
+
